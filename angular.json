@@ -73,8 +73,8 @@
               "browserTarget": "Wiki-Api:build:production"
             },
             "development": {
-              "browserTarget": "Wiki-Api:build:development",
-              "proxyConfig": "./proxy.conf.json"
+              "browserTarget": "Wiki-Api:build:development"
+            
             }
           },
           "defaultConfiguration": "development"
