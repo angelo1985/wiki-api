@@ -12,7 +12,7 @@ export class WikiDataServiceService {
   ) { }
 
   getWikiApi(value: string): Observable<any> {
-    return this._http.get<any>(`https://es.wikipedia.org/w/api.php/posts?action=query&list=search&format=json&srsearch=${value}`, {
+    return this._http.get<any>(`/posts?action=query&list=search&format=json&srsearch=${value}`, {
       headers: {
         "Access-Control-Allow-Origin": "*"
       }
