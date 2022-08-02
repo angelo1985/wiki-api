@@ -1,0 +1,22 @@
+<div class="container">
+
+    <mat-card>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Buscar en wikipedia</mat-label>
+        <input  [formControl]="searchField" (change)="onChange($event)" matInput placeholder="">
+      </mat-form-field>
+    
+    </mat-card>
+  
+    <mat-card class="result" *ngFor="let result of results">
+      
+      <h1>{{result.title}}</h1>
+  
+      <p [innerHTML]="result.snippet"></p>
+    
+    </mat-card>
+
+    <button mat-stroked-button color="primary" (click)="redirect()">Ir a la página principal</button>
+  
+  </div>
+  

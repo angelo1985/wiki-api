@@ -1,0 +1,11 @@
+{
+    "/posts": {
+      "target": "https://es.wikipedia.org/w/api.php",
+      "secure": true,
+      "pathRewrite": {
+      "^/posts": ""
+    },
+      "changeOrigin": true
+    }
+    
+  }
